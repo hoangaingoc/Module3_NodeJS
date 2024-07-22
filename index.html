@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+            integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<h1 id="name"></h1>
+<h1 id="update"></h1>
+<h1 id="detail"></h1>
+<script>
+
+    // axios.get('https://api-kent.netlify.app/.netlify/functions/api/vn').then(x => {
+    //     console.log(x.data)
+    //     document.getElementById('name').innerHTML = x.data.author
+    //     document.getElementById('update').innerHTML = x.data.lastUpdated
+    //     document.getElementById('update').innerHTML = x.data.detail[0].name
+    //     let str = ''
+    //     for (key in x.data.detail) {
+    //         let obj = x.data.detail[key]
+    //         str += `<h3>${obj.name}, ${obj.cases}</h3>`
+    //     }
+    //     document.getElementById('detail').innerHTML = str
+    // })
+
+    // let sumScore = 0;
+    // axios.get('http://localhost:3000/students/1').then(x => {
+    //     sumScore += x.data.score
+    //     axios.get('http://localhost:3000/students/2').then(x => {
+    //         sumScore += x.data.score
+    //         axios.get('http://localhost:3000/students/3').then(x => {
+    //             sumScore += x.data.score
+    //             console.log(sumScore)
+    //         })
+    //     })
+    // })
+
+    // let sumScore = 0;
+    axios.get('http://localhost:3000/students/12').then(x => {
+        console.log(x)
+    }).catch (e => {
+        alert(loi,e);
+    })
+
+    // async function sum() {
+    //     let a = await axios.get('http://localhost:3000/students/1');
+    //     let b = await axios.get('http://localhost:3000/students/2');
+    //     let c = await axios.get('http://localhost:3000/students/3');
+    //     sumScore = a.data.score + b.data.score + c.data.score
+    //     document.getElementById('name').innerHTML = sumScore
+    // }
+    // sum();
+</script>
+</body>
+</html>

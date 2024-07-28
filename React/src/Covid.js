@@ -12,7 +12,8 @@ export default class Covid extends Component {
     constructor() {
         super();
         this.state = {
-            list: []
+            list: [],
+            searchQuery: ''
         }
     }
 
@@ -22,7 +23,7 @@ export default class Covid extends Component {
             let arr = [];
             for (const key in response.data.detail) {
                 const id = parseInt(key, 10);
-                if (id < 71) {
+                if (id < 63) {
                     arr.push(response.data.detail[key]);
                 }
             }

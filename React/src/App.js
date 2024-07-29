@@ -7,6 +7,7 @@ import Covid from "./Covid";
 import {FCompoment} from "./FCompoment";
 import {FCproduct} from "./FCproduct";
 import {Countries} from "./Countries";
+import {Countries_1} from "./Countries_1";
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
             {/*<Covid/>*/}
             {/*<FCompoment/>*/}
             {/*<FCproduct/>*/}
-            <Countries/>
+            {/*<Countries/>*/}
+            <Countries_1/>
         </div>
     );
 }

@@ -1,5 +1,5 @@
-import {useState} from "react";
-
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 export function FCompoment() {
     let [inp1, setInp1] = useState(0);

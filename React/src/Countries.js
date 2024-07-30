@@ -50,9 +50,6 @@ export function Countries() {
         filterCoutries();
     },[searchName,minArea,maxArea,minPopulation,maxPopulation,])
 
-    useEffect(() => {
-
-    })
     const tableStyle = {
         borderCollapse: 'collapse',
         width: '100%',
@@ -97,7 +94,7 @@ export function Countries() {
                     value={maxPopulation}
                     onChange={(e) => setMaxPopulation(e.target.value)}
                 />
-                <select onChange={(e) => setAddInfo(e.target.value)}>
+                <select value={addInfo} onChange={(e) => setAddInfo(e.target.value)}>
                     <option value="">Select addition info</option>
                     <option value="capital">Capital</option>
                     <option value="region">Region</option>

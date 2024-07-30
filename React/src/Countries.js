@@ -1,70 +1,58 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';;
+import React, {useEffect, useState} from "react";
+import axios from "axios";
+
+// https://restcountries.com/v3.1/all?fields=name,area,population,flags
+// Tạo 1 compoent hiện danh sách quốc gia có: ảnh (hiện ảnh), tên (1 tên), diện tích và dân số.
+//     Tính năng thêm:
+//     Tìm kiếm theo tên gần đúng
+// Tìm kiêm theo khoảng diện tích (ví dụ từ 100 - 1000)
+// Tìm kiêm theo khoảng dân số (ví dụ từ 100000 - 1000000)
+// Nâng cao: hiện 1 select option để chọn thêm 1 thông tin hiện thêm (ví dụ: chọn capital => Hiện thêm tên thủ đô)
 
 export function Countries() {
-    const [countries, setCountries] = useState([]);
-    const [filteredCountries, setFilteredCountries] = useState([]);
-    const [searchName, setSearchName] = useState('');
-    const [minArea, setMinArea] = useState('');
-    const [maxArea, setMaxArea] = useState('');
-    const [minPopulation, setMinPopulation] = useState('');
-    const [maxPopulation, setMaxPopulation] = useState('');
-    const [additionalInfo, setAdditionalInfo] = useState('');
-    const [additionalData, setAdditionalData] = useState({});
+    let [countries, setCountries] = useState([])
+    let [filtered, setFiltered] = useState([])
+    let [searchName, setSearchName] = useState('')
+    let [minArea, setMinArea] = useState('')
+    let [maxArea, setMaxArea] = useState('')
+    let [minPopulation, setMinPopulation] = useState('')
+    let [maxPopulation, setMaxPopulation] = useState('')
+    let [addInfo, setAddInfo] = useState('');
 
     useEffect(() => {
-        axios.get('https://restcountries.com/v3.1/all?fields=name,area,population,flags')
+        axios.get('https://restcountries.com/v3.1/all')
             .then(response => {
-                setCountries(response.data);
-                setFilteredCountries(response.data);
-            });
+                setCountries(response.data)
+                setFiltered(response.data)
+            })
     }, []);
 
-    const filterCountries = () => {
-        let filtered = countries;
-
-        if (searchName) {
-            filtered = filtered.filter(country =>
-                country.name.common.toLowerCase().includes(searchName.toLowerCase())
-            );
+    let filterCoutries = () => {
+        let filtered = countries
+        if (searchName){
+            filtered = filtered.filter(e => e.name.common.toLowerCase().includes(searchName.toLowerCase()))
         }
-
         if (minArea) {
-            filtered = filtered.filter(country => country.area >= minArea);
+            filtered = filtered.filter(e => e.area >= minArea)
         }
-
         if (maxArea) {
-            filtered = filtered.filter(country => country.area <= maxArea);
+            filtered = filtered.filter(e => e.area <= maxArea)
         }
-
         if (minPopulation) {
-            filtered = filtered.filter(country => country.population >= minPopulation);
+            filtered = filtered.filter(e => e.population >= minPopulation)
         }
-
         if (maxPopulation) {
-            filtered = filtered.filter(country => country.population <= maxPopulation);
+            filtered = filtered.filter(e => e.population <= maxPopulation)
         }
-
-        setFilteredCountries(filtered);
-    };
+        setFiltered(filtered)
+    }
+    useEffect(()=>{
+        filterCoutries();
+    },[searchName,minArea,maxArea,minPopulation,maxPopulation,])
 
     useEffect(() => {
-        filterCountries();
-    }, [searchName, minArea, maxArea, minPopulation, maxPopulation, countries]);
 
-    useEffect(() => {
-        if (additionalInfo) {
-            axios.get(`https://restcountries.com/v3.1/all?fields=name,${additionalInfo}`)
-                .then(response => {
-                    const data = response.data.reduce((acc, country) => {
-                        acc[country.name.common] = country[additionalInfo];
-                        return acc;
-                    }, {});
-                    setAdditionalData(data);
-                });
-        }
-    }, [additionalInfo]);
-
+    })
     const tableStyle = {
         borderCollapse: 'collapse',
         width: '100%',
@@ -75,50 +63,47 @@ export function Countries() {
         border: '1px solid black',
         padding: '8px'
     }
-
     return (
-        <div>
-            <h1>Country List</h1>
+        <>
             <div>
+                <h1 align={"center"}>DANH SÁCH QUỐC GIA</h1>
                 <input
                     type="text"
-                    placeholder="Search by name"
+                    placeholder="Tìm theo tên"
                     value={searchName}
                     onChange={(e) => setSearchName(e.target.value)}
                 />
                 <input
                     type="number"
-                    placeholder="Min area"
+                    placeholder="min Area"
                     value={minArea}
                     onChange={(e) => setMinArea(e.target.value)}
                 />
                 <input
                     type="number"
-                    placeholder="Max area"
+                    placeholder="max Area"
                     value={maxArea}
                     onChange={(e) => setMaxArea(e.target.value)}
                 />
                 <input
                     type="number"
-                    placeholder="Min population"
+                    placeholder="min Population"
                     value={minPopulation}
                     onChange={(e) => setMinPopulation(e.target.value)}
                 />
                 <input
                     type="number"
-                    placeholder="Max population"
+                    placeholder="max Population"
                     value={maxPopulation}
                     onChange={(e) => setMaxPopulation(e.target.value)}
                 />
-                <select onChange={(e) => setAdditionalInfo(e.target.value)}>
-                    <option value="">Select additional info</option>
+                <select onChange={(e) => setAddInfo(e.target.value)}>
+                    <option value="">Select addition info</option>
                     <option value="capital">Capital</option>
                     <option value="region">Region</option>
                     <option value="subregion">Subregion</option>
-                    {/* Add more options as needed */}
                 </select>
-            </div>
-            <div>
+                <hr/>
                 <table style={tableStyle}>
                     <thead>
                     <tr>
@@ -126,23 +111,23 @@ export function Countries() {
                         <th style={thTdStyle} align={"center"}>Country</th>
                         <th style={thTdStyle} align={"center"}>Area</th>
                         <th style={thTdStyle} align={"center"}>Population</th>
-                        <th style={thTdStyle} align={"center"}>{additionalInfo.charAt(0).toUpperCase() + additionalInfo.slice(1)}</th>
+                        {addInfo && <th style={thTdStyle} align="center">{addInfo.charAt(0).toUpperCase() + addInfo.slice(1)}</th>}
                     </tr>
                     </thead>
                     <tbody>
-                    {filteredCountries.map(country => (
-                        <tr key={country.name.common}>
-                            <td style={thTdStyle}><img src={country.flags.png} alt={`Flag of ${country.name.common}`} width="50"/></td>
-                            <td style={thTdStyle}>{country.name.common}</td>
-                            <td style={thTdStyle}>{country.area} km²</td>
-                            <td style={thTdStyle}>{country.population}</td>
-                            <td style={thTdStyle}>{additionalData[country.name.common]}</td>
-
+                    {filtered.map(e => (
+                        <tr>
+                            <td style={thTdStyle}><img src={e.flags.png} alt={`Flag of ${e.name.common}`} width="50"/>
+                            </td>
+                            <td style={thTdStyle}>{e.name.common}</td>
+                            <td style={thTdStyle}>{e.area} km²</td>
+                            <td style={thTdStyle}>{e.population}</td>
+                            {addInfo && <td style={thTdStyle}>{e[addInfo]}</td>}
                         </tr>
                     ))}
                     </tbody>
                 </table>
             </div>
-        </div>
-    );
+        </>
+    )
 }

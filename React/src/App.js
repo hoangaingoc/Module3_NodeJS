@@ -8,6 +8,8 @@ import {FCompoment} from "./FCompoment";
 import {FCproduct} from "./FCproduct";
 import {Demo} from "./Demo";
 import {Countries} from "./Countries";
+import {Suabai_Countries} from "./Suabai_Countries";
+import {Students} from "./Students";
 
 function App() {
     return (
@@ -19,7 +21,9 @@ function App() {
             {/*<FCompoment/>*/}
             {/*<FCproduct/>*/}
             {/*<Countries/>*/}
-            <Countries/>
+            {/*<Countries/>*/}
+            {/*<Suabai_Countries/>*/}
+            <Students/>
         </div>
     );
 }

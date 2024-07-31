@@ -99,11 +99,13 @@ export function Countries() {
                     <option value="capital">Capital</option>
                     <option value="region">Region</option>
                     <option value="subregion">Subregion</option>
+                    <option value="timezones">Timezones</option>
                 </select>
                 <hr/>
                 <table style={tableStyle}>
                     <thead>
                     <tr>
+                        <th style={thTdStyle} align={"center"}>STT</th>
                         <th style={thTdStyle} align={"center"}>Flag</th>
                         <th style={thTdStyle} align={"center"}>Country</th>
                         <th style={thTdStyle} align={"center"}>Area</th>
@@ -112,9 +114,10 @@ export function Countries() {
                     </tr>
                     </thead>
                     <tbody>
-                    {filtered.map(e => (
+                    {filtered.map((e,index) => (
                         <tr>
-                            <td style={thTdStyle}><img src={e.flags.png} alt={`Flag of ${e.name.common}`} width="50"/>
+                            <td style={thTdStyle} align={"center"}>{index +1}</td>
+                            <td style={thTdStyle}><img src={e.flags.png} alt={`Flag of ${e.name.common}`} width="150"/>
                             </td>
                             <td style={thTdStyle}>{e.name.common}</td>
                             <td style={thTdStyle}>{e.area} km²</td>

@@ -7,7 +7,6 @@ export function FCproduct() {
         {id: 3, name: 'IP pro max', price: 28000000},
     ],);
     const [newProduct, setNewProduct] = useState({id: '', name: '', price: ''});
-    const [list, setList] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleInputChange = (e) => {

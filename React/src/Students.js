@@ -8,19 +8,19 @@ export function Students() {
     let [filtered, setFilter] = useState([])
     let [search, setSearch] = useState('')
 
-    useEffect(() => {
+    useEffect(()=>{
         axios.get('http://localhost:3000/students')
             .then((res) => {
                 setList(res.data)
             })
-    }, []);
+    }, [])
 
     let searchName = () => {
         let filtered = list
-        if (search) {
+        if (searchName) {
             filtered = filtered.filter(e => e.name.toLowerCase().includes(search.toLowerCase()))
         }
-        setFilter(filtered)
+            setFilter(filtered)
     }
     let ScoreAscending = () => {
         const sortedSore = [...filtered].sort((a,b) => parseFloat(a.score) - parseFloat(b.score))
@@ -32,7 +32,7 @@ export function Students() {
     }
     useEffect(()=>{
         searchName()
-    },[search])
+    },[list,search])
 
     const tableStyle = {
         borderCollapse: 'collapse',

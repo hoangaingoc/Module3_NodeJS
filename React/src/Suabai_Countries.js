@@ -30,7 +30,6 @@ export function Suabai_Countries() {
         }
     }
 
-
     useEffect(() => {
         getAll()
     }, [])

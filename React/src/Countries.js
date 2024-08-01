@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 // https://restcountries.com/v3.1/all?fields=name,area,population,flags
 // Tạo 1 compoent hiện danh sách quốc gia có: ảnh (hiện ảnh), tên (1 tên), diện tích và dân số.
@@ -18,6 +19,7 @@ export function Countries() {
     let [minPopulation, setMinPopulation] = useState('')
     let [maxPopulation, setMaxPopulation] = useState('')
     let [addInfo, setAddInfo] = useState('');
+    let navigate = useNavigate()
 
     useEffect(() => {
         axios.get('https://restcountries.com/v3.1/all')
@@ -62,6 +64,11 @@ export function Countries() {
     }
     return (
         <>
+            <button onClick={() => {
+                navigate('/a')
+            }}>Chuyển sang Covid
+            </button>
+
             <div>
                 <h1 align={"center"}>DANH SÁCH QUỐC GIA</h1>
                 <input
@@ -110,13 +117,14 @@ export function Countries() {
                         <th style={thTdStyle} align={"center"}>Country</th>
                         <th style={thTdStyle} align={"center"}>Area</th>
                         <th style={thTdStyle} align={"center"}>Population</th>
-                        {addInfo && <th style={thTdStyle} align="center">{addInfo.charAt(0).toUpperCase() + addInfo.slice(1)}</th>}
+                        {addInfo && <th style={thTdStyle}
+                                        align="center">{addInfo.charAt(0).toUpperCase() + addInfo.slice(1)}</th>}
                     </tr>
                     </thead>
                     <tbody>
-                    {filtered.map((e,index) => (
+                    {filtered.map((e, index) => (
                         <tr>
-                            <td style={thTdStyle} align={"center"}>{index +1}</td>
+                            <td style={thTdStyle} align={"center"}>{index + 1}</td>
                             <td style={thTdStyle}><img src={e.flags.png} alt={`Flag of ${e.name.common}`} width="150"/>
                             </td>
                             <td style={thTdStyle}>{e.name.common}</td>
@@ -128,6 +136,8 @@ export function Countries() {
                     </tbody>
                 </table>
             </div>
+
+
         </>
     )
 }

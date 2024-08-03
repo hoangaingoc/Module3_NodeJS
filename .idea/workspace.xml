@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f626de7a-39b2-410c-a903-3b404daf2c2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/React/src/Suabai_Students.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/src/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/src/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/src/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/React/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/React/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/React/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Countries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Students.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/React/src/Suabai_Countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Suabai_Countries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +77,8 @@
       <workItem from="1721963056389" duration="11669000" />
       <workItem from="1722062798797" duration="21440000" />
       <workItem from="1722467110725" duration="479000" />
-      <workItem from="1722511920468" duration="6480000" />
+      <workItem from="1722511920468" duration="7185000" />
+      <workItem from="1722669393611" duration="2176000" />
     </task>
     <servers />
   </component>

@@ -34,7 +34,7 @@ export function Suabai_Countries() {
         getAll()
     }, [])
 
-    let findNameContian = (event) => {
+    let findNameContain = (event) => {
         setNameSearch(event.target.value)
         let input = event.target.value
         if (input == '') {
@@ -64,7 +64,7 @@ export function Suabai_Countries() {
                    placeholder='Nhập tên'
                    value={nameSearch}
                    onChange={(event) =>{
-                       findNameContian(event)
+                       findNameContain(event)
                    }}/>
             <button onClick={findByArea}>DS nước DT từ 100 đến 1000</button>
             <button onClick={getAll}>Hiển thị tất cả</button>

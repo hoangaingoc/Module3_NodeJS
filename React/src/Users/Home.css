@@ -36,13 +36,13 @@ p {
 .logo {
     height: 100%;
     flex: 1;
-    background-color: #c0f8c0;
+    border: 1px solid;
 }
 
 .banner {
     height: 100%;
     flex: 3;
-    background-color: burlywood;
+    border: 1px solid;
 }
 
 .menu {
@@ -50,37 +50,39 @@ p {
     height: 50px;
     width: 100%;
     text-align: center;
-    background-color: lightgray;
+    border: 1px solid;
 }
 
 
 .home, .product, .order, .logout {
     height: 50px;
     width: 10%;
-    background-color: blanchedalmond;
     line-height: 50px;
+    border: 1px solid;
 }
 
 .order {
     margin-left: calc(80%);
+    border: 1px solid;
 }
 
 .main {
     display: flex;
     height: 500px;
     width: 100%;
+    border: 1px solid;
 }
 
 .slideBar {
     height: 500px;
     width: 30%;
-    background-color: #f59cf5;
+    border: 1px solid;
 }
 
 .listproduct {
-    background-color: cornflowerblue;
     height: 500px;
     width: 70%;
+    border: 1px solid;
 }
 .admin{
     margin-top: 80px;
@@ -89,10 +91,11 @@ p {
 }
 .main-details{
     width: 80%;
+    border: 1px solid;
 }
 .product-order {
+    border: 1px solid;
     width: 20%;
-    background-color: #c0f8c0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,14 +105,12 @@ p {
 .menuAdmin {
     width: 100%;
     height: 20%;
-    background-color: plum;
     text-align: center;
 }
 
 .listUser {
     width: 100%;
     height: 80%;
-    background-color: burlywood;
     text-align: center;
 }
 

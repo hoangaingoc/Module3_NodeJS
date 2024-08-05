@@ -1,9 +1,9 @@
 import {Link, Route, Routes, Outlet} from "react-router-dom";
-import {Home} from "./Home";
-import {Login} from "./Login";
-import {Register} from "./Register";
-import Product from "./Product";
-import Orders from "./Orders";
+import {Home} from "./Users/Home";
+import {Login} from "./Users/Login";
+import {Register} from "./Users/Register";
+import Product from "./Products/Product";
+import Orders from "./Products/Orders";
 
 
 function App() {

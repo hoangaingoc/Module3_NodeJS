@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f626de7a-39b2-410c-a903-3b404daf2c2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/React/src/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/src/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/src/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/src/Home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/src/Orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/React/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Suabai_Countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Suabai_Countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/reportWebVitals.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/1. Lập trình/Front-End/Module3_React/React/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/1. Lập trình/Front-End/Thi_module2_CSS/bai2.html",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\1. Lập trình\Front-End\Module3_React\React\src" />
@@ -78,7 +80,8 @@
       <workItem from="1722062798797" duration="21440000" />
       <workItem from="1722467110725" duration="479000" />
       <workItem from="1722511920468" duration="7185000" />
-      <workItem from="1722669393611" duration="2176000" />
+      <workItem from="1722669393611" duration="2548000" />
+      <workItem from="1722684134549" duration="6554000" />
     </task>
     <servers />
   </component>

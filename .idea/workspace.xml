@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f626de7a-39b2-410c-a903-3b404daf2c2d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Calculation.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/Calculation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Countries/Countries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Covid.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/Covid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/Demo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/DemoClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/DemoClass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/FCompoment.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/FCompoment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/FCproduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Products/FCproduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Users/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Users/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Users/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Products/Orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Products/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Users/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Students/Students.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Suabai_Countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Countries/Suabai_Countries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/src/Suabai_Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Students/Suabai_Students.js" afterDir="false" />
-    </list>
+    <list default="true" id="f626de7a-39b2-410c-a903-3b404daf2c2d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -1,6 +1,5 @@
-import {useEffect, useState} from "react";
 import {Link, Outlet} from "react-router-dom";
-import './Home.css';
+import '../Index.css';
 
 
 export function Home(){

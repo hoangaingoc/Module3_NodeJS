@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f626de7a-39b2-410c-a903-3b404daf2c2d" name="Changes" comment="" />
+=======
+    <list default="true" id="f626de7a-39b2-410c-a903-3b404daf2c2d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/App.js" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/React/src/Calculation.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/Calculation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Countries/Countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Covid.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/Covid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/Demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/DemoClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/DemoClass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/FCompoment.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Demo/FCompoment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/FCproduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Products/FCproduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Users/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Users/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Users/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Products/Orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Products/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Users/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Students/Students.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Suabai_Countries.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Countries/Suabai_Countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/src/Suabai_Students.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/src/Students/Suabai_Students.js" afterDir="false" />
+>>>>>>> d15b15f265100146109842878286753783dafff3
+    </list>
+>>>>>>> 2cc3556363eb0459cc33d57cf3e640e98dfac4d6
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +60,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/1. Lập trình/Module3_React",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+=======
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -47,6 +88,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> d15b15f265100146109842878286753783dafff3
   }
 }</component>
   <component name="RecentsManager">
@@ -80,6 +122,9 @@
       <workItem from="1722511920468" duration="7185000" />
       <workItem from="1722669393611" duration="2548000" />
       <workItem from="1722684134549" duration="6554000" />
+      <workItem from="1722816052431" duration="284000" />
+      <workItem from="1722874589769" duration="205000" />
+      <workItem from="1722874818245" duration="543000" />
     </task>
     <servers />
   </component>

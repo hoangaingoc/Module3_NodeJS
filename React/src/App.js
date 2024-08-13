@@ -32,7 +32,6 @@ function App() {
                     <Route path={'students'} element={<Students/>}></Route>
                         <Route path={'students/add'} element={<AddStudents/>}></Route>
                     <Route path={'students/details/:id'} element={<StudentDetails/>}></Route>
-
                 </Route>
             </Routes>
         </div>
